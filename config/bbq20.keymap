@@ -1,4 +1,3 @@
-
 /*
  *Copyright (c) 2025 XixiLee-boom
  *
@@ -36,7 +35,7 @@
         };
     };
 
-behaviors {
+    behaviors {
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -51,11 +50,11 @@ behaviors {
 
         default_layer {
             bindings = <
-&kp CLCK                &kp LGUI                   &mkp LCLK                  &mt ESC K_BACK                          &kp TAB
-&bhm HASH Q  &bhm N1 W  &bhm N2 E  &bhm N3 R  &bhm LPAR T   &bhm RPAR Y        &bhm UNDER U    &bhm MINUS I        &bhm PLUS O   &bhm AT P
-&bhm STAR A  &bhm N4 S  &bhm N5 D  &bhm N6 F  &bhm SLASH G  &bhm COLON H       &bhm SEMI J     &bhm APOS K         &bhm DQT L    &kp BSPC
-&kp LSHFT    &bhm N7 Z  &bhm N8 X  &bhm N9 C  &bhm QMARK V  &bhm EXCL B        &bhm COMMA N    &bhm DOT M          &kp SEMI      &kp ENTER
-&kp LCTRL               &kp LALT                            &kp SPACE                          &tog SYM                          &tog UPPER
+&mkp LCLK    &kp LGUI   &mkp MCLK  &mt ESC K_BACK  &mkp RCLK
+&bhm HASH Q  &bhm N1 W  &bhm N2 E  &bhm N3 R       &bhm LPAR T   &bhm RPAR Y     &bhm UNDER U  &bhm MINUS I  &bhm PLUS O  &bhm AT P
+&bhm STAR A  &bhm N4 S  &bhm N5 D  &bhm N6 F       &bhm SLASH G  &bhm COLON H    &bhm SEMI J   &bhm APOS K   &bhm DQT L   &kp BSPC
+&kp LSHFT    &bhm N7 Z  &bhm N8 X  &bhm N9 C       &bhm QMARK V  &bhm EXCL B     &bhm COMMA N  &bhm DOT M    &kp DOLLAR   &kp ENTER
+                        &kp LCTRL                  &kp LALT      &kp SPACE       &tog SYM      &tog UPPER
             >;
         };
 
